@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms using HTML & CSS</h1>
+
+    <div class="container">
+        
+        <div class="forms">
+            <form class="form-1" action="/" method="post">
+                
+                <h2>Signup Form</h2>
+
+                <label for="fname">First name</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+
+                <label for="lname">Last name</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
+
+                <label for="email">E - mail</label>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Password must include special characters">
+
+                <button type="submit">Submit</button>
+
+                <br>
+
+                <a href="#">Signup using Google instead!</a>
+
+            </form>
+
+            <form class="form-2" action="/" method="post">
+                
+                <h2>Login Form</h2>
+
+                <label for="email">E - mail</label>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Password must include special characters">
+                <button type="submit">Login</button>
+
+                <a href="#">Login using Google / Facebook</a>
+
+            </form>
+
+            <form class="form-3" action="/" method="post">
+                
+                <h2>Contact Form</h2>
+
+                <label for="fname">Username</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your username" required>
+
+                <label for="email">E - mail</label>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+
+                <label for="message">Your message</label>
+                <textarea name="message" id="message"></textarea>
+                
+                <button type="submit">Send message</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

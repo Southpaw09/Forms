@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+body h1{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.container{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.forms{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+.form-1, .form-2, .form-3{
+    max-width: 400px;
+    text-align: left;
+    padding: 2rem;
+    background-color: #fff;
+    color: #667db6;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.form-1 label, .form-2 label, .form-3 label{
+    font-weight: bolder;
+}
+
+.form-1 input, .form-2 input, .form-3 input{
+    margin: 5px 0 20px 0;
+    width: 100%;
+    height: 30px;
+    color: #0082c8;
+    padding: 5px;
+}
+
+.form-1 input:focus, .form-2 input:focus, .form-3 input:focus{
+    box-shadow: 0 0 10px rgba(75, 136, 230, 0.8);
+}
+
+.form-1 h2, .form-2 h2, .form-3 h2{
+    padding-bottom: 20px;
+}
+
+.form-1 button, .form-2 button, .form-3 button{
+    background-color: #0082c8;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.form-2 a, .form-1 a{
+    text-decoration: none;
+    color: #0082c8;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.form-3 textarea{
+    width: 100%;
+    /* height: 1; */
+    resize: vertical;
+    margin: 5px 0 20px 0;
+}
+
+@media(max-width:800px){
+
+    body h1{
+        font-size: 1.5rem;
+    }
+
+    .forms{
+        display: inline-block;
+    }
+    .form-1, .form-2, .form-3{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
